@@ -14,3 +14,7 @@ commands = [
         "category": "Git"
     }
 ]
+
+@app.get("/commands")
+def get_commands():
+    return commands
